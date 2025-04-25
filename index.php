@@ -168,13 +168,15 @@ $select = mysqli_query($conn, "SELECT * FROM products");
               @media only screen and (min-width:798px) and (max-width: 1100px) {
                 .container{
                   width: 80%;
+                  font-size: small;
                 }
               }
 
-              @media only screen and (max-width: 798px) {
+              @media only screen and (max-width: 786px) {
                 .container{
                   width: 70%;
                   transform: translateX(20px);
+                  
                 }
                 .container ul::after{
                   left: -40px;
@@ -244,40 +246,60 @@ $select = mysqli_query($conn, "SELECT * FROM products");
 <body class="bg-gray-100 ">
 
 <header class="bg-[#069546] shadow-md sticky top-0 z-50">
+  <nav>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 justify-between items-center">
+        <!-- Logo + Links -->
+        <div class="flex items-center">
+          <a href="index.php">
+            <img class="size-8 filter invert brightness-0" src="images/logo-2-removebg-preview.png" alt="X Logo">
+          </a>
 
-<nav>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 justify-between items-center">
-                <div class="flex items-center">
-                  <a href="index.php">
-                      <img class="size-8 filter invert brightness-0" src="images/logo-2-removebg-preview.png" alt="X Logo">
-                  </a>
-                    <div class="hidden md:flex ml-10 space-x-4">
-    <a href="index.php" class="text-[20px] text-white  hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md text-xl">Home</a>
-    <a href="#market" class="text-white  hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md text-xl">Market</a>
-    <a href="#about" class="text-white  hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md text-xl">About</a>
-    <a href="#contact" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md text-xl">Contact</a>
-    <a href="#meet" class="text-white  hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md text-xl">Meet Team</a>
-</div>
-
-
-
-                </div>
-                <div class="hidden md:flex items-center">
-
-                    <div class="flex gap-4">
-                        <button class="bg-[#fff000] px-4 py-2 text-green-500 rounded-lg hover:bg-white" onclick="window.location.href='registration.php'">Register</button>
-                        <button class="bg-white px-4 py-2 text-green-600 rounded-lg hover:bg-[#fff000]" onclick="window.location.href='login.php' ">Login</button>
-                    </div>
-
-                    
-
-                </div>
-            </div>
+          <!-- Hamburger Toggle for Mobile -->
+          <button class="ml-4 md:hidden text-white focus:outline-none" id="menu-toggle">
+            <!-- Hamburger icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-    </nav>
 
+        <!-- Desktop Links -->
+        <div class="hidden md:flex ml-10 space-x-4" id="menu-links">
+          <a href="index.php" class="text-white text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Home</a>
+          <a href="#market" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Market</a>
+          <a href="#about" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">About</a>
+          <a href="#contact" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Contact</a>
+          <a href="#meet" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Meet Team</a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex gap-4" id="menu-buttons">
+          <button class="bg-[#fff000] px-4 py-2 text-green-500 rounded-lg hover:bg-white"
+            onclick="window.location.href='registration.php'">Register</button>
+          <button class="bg-white px-4 py-2 text-green-600 rounded-lg hover:bg-[#fff000]"
+            onclick="window.location.href='login.php'">Login</button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (Initially Hidden) -->
+      <div class="md:hidden mt-4 hidden flex-col space-y-4" id="mobile-menu">
+        <a href="index.php" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Home</a>
+        <a href="#market" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Market</a>
+        <a href="#about" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">About</a>
+        <a href="#contact" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Contact</a>
+        <a href="#meet" class="text-white hover:bg-white hover:text-[#069546] px-3 py-2 rounded-md">Meet Team</a>
+        <button class="bg-[#fff000] px-4 py-2 text-green-500 rounded-lg hover:bg-white"
+          onclick="window.location.href='registration.php'">Register</button>
+        <button class="bg-white px-4 py-2 text-green-600 rounded-lg hover:bg-[#fff000]"
+          onclick="window.location.href='login.php'">Login</button>
+      </div>
+    </div>
+  </nav>
 </header>
+
     
 <!-- Home Section  -->
     <section id="home"
