@@ -104,7 +104,7 @@ if(isset($_GET['delete'])){
                         </button>
                         <div class="flex items-center">
                             <img src="./images/professor.jpg" alt="User" class="w-8 h-8 rounded-full">
-                            <span class="ml-2 text-sm font-medium">Admin User</span>
+                            <span class="ml-2 text-sm font-medium"><?php echo $_SESSION["email"]; ?></span>
                         </div>
                     </div>
                 </div>

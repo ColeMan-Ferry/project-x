@@ -15,6 +15,8 @@ $select = mysqli_query($conn, "SELECT * FROM products");
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://cdn.tailwindcss.com"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
@@ -483,9 +485,40 @@ $select = mysqli_query($conn, "SELECT * FROM products");
 </div>
 </section>
 
+<!-- stats -->
+<section class="stats-section">
+    <div class="stat-card">
+      <div class="icon-box orange"><i class="fas fa-book-open"></i></div>
+      <div class="stat-content">
+        <h3>Expert Instructors</h3>
+        <div class="stat-number"><span class="counter">20</span>+</div>
+        <p>Industry professionals with real-world experience</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="icon-box cyan"><i class="fas fa-briefcase"></i></div>
+      <div class="stat-content">
+        <h3>Courses Offered</h3>
+        <div class="stat-number"><span class="counter">15</span>+</div>
+        <p>Specialized programs in various tech disciplines</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="icon-box gray"><i class="fas fa-users"></i></div>
+      <div class="stat-content">
+        <h3>Students Trained</h3>
+        <div class="stat-number"><span class="counter">1000</span>+</div>
+        <p>Successful graduates now working in the industry</p>
+      </div>
+    </div>
+  </section>
+
+
 <!-- Meet our Team  -->
   <section id="meet">
-      <h2 class="text-3xl font-bold text-center mb-10">Meet Our Team</h2>
+      <h2 class="text-3xl font-bold text-center mb-10 mt-10">Meet Our Team</h2>
         
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 justify-center max-w-6xl mx-auto text-center">
               
@@ -567,15 +600,15 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                         </div>
                   </a>
 
-                  <!-- Social Icons -->
+                   <!-- Social Icons -->
               <div class="mt-4 flex justify-center space-x-4 text-gray-600">
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="tel:+256748524487" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-phone'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="mailto:jemimahkuteesa8@gmail.com" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-envelope'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="https://github.com/Jkuteesa" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bxl-github'></i>
                   </a>
               </div>
@@ -598,14 +631,15 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                   </a>
 
                   <!-- Social Icons -->
-              <div class="mt-4 flex justify-center space-x-4 text-gray-600">
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+               <!-- Social Icons -->
+               <div class="mt-4 flex justify-center space-x-4 text-gray-600">
+                  <a href="tel:+256740605174" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-phone'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="mailto:nakiyagalucy1@gmail.com" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-envelope'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="https://github.com/" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bxl-github'></i>
                   </a>
               </div>
@@ -627,15 +661,15 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                         </div>
                   </a>
 
-                  <!-- Social Icons -->
+                   <!-- Social Icons -->
               <div class="mt-4 flex justify-center space-x-4 text-gray-600">
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="tel:+256709541346" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-phone'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="mailto:nabanobaracheal205@gmail.com" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-envelope'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="https://github.com/Nabanoba-Racheal" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bxl-github'></i>
                   </a>
               </div>
@@ -718,14 +752,14 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                   </a>
 
                   <!-- Social Icons -->
-              <div class="mt-4 flex justify-center space-x-4 text-gray-600">
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+               <div class="mt-4 flex justify-center space-x-4 text-gray-600">
+                  <a href="tel:+256766929987" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-phone'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="mailto:desiretukamushaba24@gmail.com" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-envelope'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="https://github.com/DesireTukamushaba24" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bxl-github'></i>
                   </a>
               </div>
@@ -747,15 +781,15 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                   </div>
               </a>
 
-              <!-- Social Icons -->
-              <div class="mt-4 flex justify-center space-x-4 text-gray-600">
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+               <!-- Social Icons -->
+               <div class="mt-4 flex justify-center space-x-4 text-gray-600">
+                  <a href="tel:+256706442225" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-phone'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="mailto:karthynsereko647@gmail.com" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bx-envelope'></i>
                   </a>
-                  <a href="#" class="text-2xl hover:text-[#00b400]">
+                  <a href="https://github.com/Nserek" class="text-2xl hover:text-[#00b400]">
                       <i class='bx bxl-github'></i>
                   </a>
               </div>
@@ -1018,6 +1052,11 @@ $select = mysqli_query($conn, "SELECT * FROM products");
     </div>
   </footer>
 
-  
+  <!-- jQuery and CounterUp -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>

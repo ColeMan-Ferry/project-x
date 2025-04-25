@@ -125,9 +125,7 @@
                             <div class="mb-3">
                                 <input type="password" class="form-control" name="password" placeholder="Password:">
                             </div>
-                            <div class="mb-3">
-                                <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
-                            </div>
+                            
                             <button type="submit" name="submit" class="btn btn-success btn-register">Register</button>
                 </form>
                 

@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .stats-section {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    box-shadow: 0 15px 30px rgba(72, 239, 184, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .icon-box {
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .orange { background-color: #fcb29d; }
+  .cyan { background-color: #a6f4ff; color: #0d99ff; }
+  .gray { background-color: #e0e0e0; color: #333; }
+  
+  .stat-content h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0f172a;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #0f172a;
+  }
+  
+  .stat-content p {
+    font-size: 0.95em;
+    color: #475569;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stat-card {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .icon-box {
+      margin-bottom: 10px;
+    }
+  }
+  
